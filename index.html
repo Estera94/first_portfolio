@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incercare</title>
+    <link rel="stylesheet" href="./resources/scss/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- navigation-menu -->
+      <div class="top-menu">
+        <!-- dark mode button -->
+
+        <div class="mode-button">
+          <input type="checkbox" name="theme" id="switch" class="checkbox" />
+          <label class="label" for="switch">
+            <span></span>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+
+        <ul>
+          <li class="nav about-btn">
+            <a href="#" class="menu-item underline menuHover">
+              <span class="icon ion-person"></span>
+              <span class="link">About</span>
+            </a>
+          </li>
+          <li class="nav resume-btn">
+            <a href="#" class="menu-item underline">
+              <span class="icon ion-android-list"></span>
+              <span class="link">Resume</span>
+            </a>
+          </li>
+          <li class="nav projects-btn">
+            <a href="#" class="menu-item underline">
+              <span class="fas fa-laptop-code"></span>
+              <span class="link">Works</span>
+            </a>
+          </li>
+          <li class="nav contact-btn">
+            <a href="#" class="menu-item">
+              <span class="icon ion-at"></span>
+              <span class="link link4">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- left card -->
+
+      <div class="left-container">
+        <div class="slide"></div>
+        <div class="my-image">
+          <img id="my-img" src="./resources/img/profile_picture.jpg" alt="#" />
+        </div>
+        <div class="left-container-text">
+          <div class="title">Estera Maftei</div>
+          <div class="subtitle">On my way to becoming a web developer</div>
+          <div class="icons">
+            <a href=""><span class="fab fa-facebook"></span></a>
+            <a href=""><span class="fab fa-github"></span></a>
+          </div>
+        </div>
+        <footer class="footer-left">
+          <span class="cv">Download CV</span>
+          <span class="contact">Contact Me</span>
+        </footer>
+      </div>
+
+      <!-- right card -->
+      <div class="right-container">
+        <div class="bottom"></div>
+        <!-- About me -->
+        <div id="content-about" class="item about">
+          <div class="titles"><span class="first-word">About</span> Me</div>
+          <div class="row">
+            <div class="text-about">
+              <p>
+                I am a highly motivated individual and I enjoy taking ownership
+                of problems and following through until a solution has been
+                identified and applied. I have a good working knowledge of O365,
+                Windows and networking environments and I am comfortable
+                interacting with a wide variety of users and stakeholders.
+              </p>
+            </div>
+            <div class="info-list">
+              <ul>
+                <li><span>Age . . . . . . . . . </span>26</li>
+                <li><span>Residence . . . . . . . . . </span>UK</li>
+              </ul>
+              <ul>
+                <li><span>Address . . . . . . . . . </span>Swindon</li>
+                <li><span>Address . . . . . . . . . </span>Swindon</li>
+              </ul>
+            </div>
+          </div>
+          <div class="fan-fact">
+            <div class="titles">
+              <span class="first-word">My</span> Services
+            </div>
+          </div>
+          <div class="fact-items">
+            <div class="fact-item">
+              <span class="fa-icon fa fa-tag"></span>
+              <div class="fact-name">Front-end</div>
+              <div class="grey-text">
+                Modern and mobile-ready website that will help you reach all of
+                your marketing.
+              </div>
+            </div>
+            <div class="fact-item">
+              <span class="fa-icon fa fa-code"></span>
+              <div class="fact-name">Back-End</div>
+              <div class="grey-text">
+                UI/UX focus on the user, frontend focus on the settings of the
+                user, and backend focus on the data.
+              </div>
+            </div>
+            <div class="fact-item">
+              <span class="fa-icon fa fa-coffee"></span>
+              <div class="fact-name">1000 Cups of coffee</div>
+              <div class="grey-text">
+                Modern and mobile-ready website that will help you reach all of
+                your marketing.
+              </div>
+            </div>
+            <div class="fact-item">
+              <span class="fa-icon fa fa-coffee"></span>
+              <div class="fact-name">1000 Cups of coffee</div>
+              <div class="grey-text">
+                Modern and mobile-ready website that will help you reach all of
+                your marketing.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resume -->
+        <div id="content-resume" class="item resume">
+          <div class="titles title-line">
+            <span class="first-word">R</span>esume
+          </div>
+          <div class="resume-detailes">
+            <div class="resume-experience">
+              <div class="resume-title">
+                <div class="icon">
+                  <i class="fa fa-briefcase"></i>
+                </div>
+                <div class="name">Experience</div>
+              </div>
+              <div class="resume-items">
+                <div class="resume-item p-line">
+                  <div class="date-color">2020 - Present</div>
+                  <div class="name">Web Development Internship</div>
+                  <div class="company">Horeca</div>
+                  <p>
+                    Programming using HTML, CSS3 and JavaScript (jQuery) to
+                    build responsive and interactive websites.
+                  </p>
+                </div>
+                <div class="resume-item">
+                  <div class="date">2018 - 2020</div>
+                  <div class="name">Quality inspector</div>
+                  <div class="company">Johnson Matthey</div>
+                  <p>
+                    As part of the quality inspection team, I was responsible
+                    for conducting a variety of tests on materials used in the
+                    manufacture of fuel cells
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="resume-education">
+              <div class="resume-title">
+                <div class="icon">
+                  <i class="fa fa-university"></i>
+                </div>
+                <div class="name">Education</div>
+              </div>
+              <div class="resume-items">
+                <div class="resume-item p-line">
+                  <div class="date">2019 - 2020</div>
+                  <div class="name">Business and Events Management</div>
+                  <div class="company">UWE Bristol</div>
+                  <p>CertHE Bussiness and Event Management</p>
+                </div>
+                <div class="resume-item">
+                  <div class="date">2009 - 2013</div>
+                  <div class="name">European Baccalaureate</div>
+                  <div class="company">School of Electrical Technology</div>
+                  <p>Math/Biology (A-level equivalent)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Works -->
+        <div id="content-projects" class="item projects">
+          <div class="titles title-work">
+            <span class="first-word">Recent </span>Works
+          </div>
+
+          <div class="work-content">
+            <div id="work1">
+              <figure class="work-overlay">
+                <img src="./resources/img/toDo-list.JPG" alt="todo list" />
+                <figcaption>
+                  <a
+                    href="https://esteramaftei.github.io/todo_list/"
+                    class="worksLink"
+                  >
+                    <p>Click for more</p>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </figcaption>
+              </figure>
+              <p class="workPharagraph">ToDo list (vanilla JavaScript)</p>
+            </div>
+
+            <div id="work2">
+              <figure class="work-overlay">
+                <img
+                  src="./resources/img/oneColor-website.JPG"
+                  alt="one color website"
+                />
+                <figcaption>
+                  <a
+                    href="https://esteramaftei.github.io/oneColorWeb/"
+                    class="worksLink"
+                  >
+                    <p>Click for more</p>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </figcaption>
+              </figure>
+              <div><p class="workPharagraph">One color website</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="content-contact" class="item contact1">
+          <div class="titles"><span class="first-word">Get</span> in touch</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- animation -->
+
+    <div class="animation-area">
+      <ul class="box-area">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./resources/js/app.js"></script>
+    <script src="./resources/js/topMenu.js"></script>
+    <script src="./resources/js/dark_mode.js"></script>
+  </body>
+</html>

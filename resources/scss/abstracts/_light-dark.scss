@@ -1,0 +1,62 @@
+html {
+  --bg: #{$animation-background};
+  --colorText: #{$dark-mn};
+  --cart-bg: #{$white-bg};
+  --green-color: #{$green-light};
+  --line-cart: #{$line-light};
+  --box-shadow: #{$boxShadowRight-light};
+  --box-shadow-left: #{$boxShadowLeft-light};
+  --resume-date-green: #{$resumeDate-light};
+  --resume-date-grey: #{$resume-light};
+  --color-pharagraph: #{$resume-paragraph-light};
+  --top-menuLine: #{$top-menu-light};
+  --mode-color: #5b5b5e;
+  --avatar-border: transparent;
+  --image-shadow: #{$image-shadow-light};
+  //font
+  --font-weight-leftTitle: #{$normal-weight};
+  --font-weight-footer: #{$medium-weight};
+  --font-weight-icon: #{$medium-weight};
+  --font-weight-spanAbout: #{$semibold-weight};
+  --font-weight-factRight: #{$semibold-weight};
+  --font-weight-resumeName: #{$medium-weight};
+  --font-weightPharagraph: #{$normal-weight};
+  --font-weight-name: #{$medium-weight};
+  --heading-weight: #{$semibold-weight};
+
+  --content: none;
+
+  --left: #{$left-light};
+}
+
+html[data-theme="dark"] {
+  --bg: #{$animation-bg};
+  --colorText: #{$white-text};
+  --cart-bg: #{$dark-bg};
+  --green-color: #{$green-dark};
+  --line-cart: #{$line-dark};
+  --box-shadow: #{$boxShadowRight-dark};
+  --box-shadow-left: #{$boxShadowLeft-dark};
+  --resume-date-green: #{$resumeDate-dark};
+  --resume-date-grey: #{$resume-dark};
+  --color-pharagraph: #{$resume-paragraph-dark};
+  --top-menuLine: #{$top-menu-dark};
+  --mode-color: #{$green-dark};
+  --avatar-border: #{$dark-bg};
+  --image-shadow: #{$image-shadow-dark};
+  //font
+  --font-weight-leftTitle: #{$light-weight};
+  --font-weight-footer: #{$normal-weight};
+  --font-weight-icon: #{$normal-weight};
+  --font-weight-spanAbout: #{$medium-weight};
+  --font-weight-factRight: #{$medium-weight};
+  --font-weight-resumeName: #{$normal-weight};
+  --font-weightPharagraph: #{$light-weight};
+  --font-weight-name: #{$normal-weight};
+  --heading-weight: #{$medium-weight};
+
+  --content: visible;
+  --content-dark-none: none;
+
+  --left: #{$left-dark};
+}

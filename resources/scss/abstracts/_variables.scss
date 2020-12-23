@@ -1,0 +1,67 @@
+//general variables
+$hairline-weight: 100;
+$thin-weight: 200;
+$light-weight: 300;
+$normal-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
+$bold-weight: 700;
+$xbold-weight: 800;
+$black-weight: 900;
+
+//LIGHT MODE
+$dark-mn: rgb(36, 31, 31);
+$white-bg: #ffff;
+$green-light: #0e8684;
+$animation-background: linear-gradient(
+  to bottom right,
+  #50a3a2 0%,
+  #78cc6d 100%
+);
+$line-light: radial-gradient(
+  ellipse at left,
+  rgba(39, 41, 46, 0.2) 0%,
+  rgba(20, 8, 8, 0) 70%
+);
+$top-menu-light: radial-gradient(
+  ellipse at right,
+  rgba(11, 14, 20, 0.15) 0%,
+  rgba(24, 22, 22, 0) 70%
+);
+
+$image-shadow-light: rgba(76, 119, 83, 0.4);
+$boxShadowRight-light: rgba(214, 211, 211, 0.3);
+$boxShadowLeft-light: rgba(128, 61, 14, 0.3);
+$resumeDate-light: #047a3f;
+$resume-light: #c7bcbc;
+$resume-paragraph-light: #646464;
+
+$left-light: 18px;
+
+// DARK MODE
+$animation-bg: linear-gradient(to bottom right, #17171b 0%, #28282f 100%);
+$dark-bg: #31313a;
+$green-dark: #78cc6d;
+$white-text: rgba(255, 255, 255, 0.85);
+$line-dark: radial-gradient(
+  ellipse at left,
+  rgba(112, 112, 112, 0.603) 0%,
+  rgba(255, 255, 255, 0) 70%
+);
+$top-menu-dark: radial-gradient(
+  ellipse at right,
+  rgba(112, 112, 112, 0.603) 0%,
+  rgba(255, 255, 255, 0) 70%
+);
+$image-shadow-dark: linear-gradient(
+  135deg,
+  rgba(48, 247, 22, 0.4) 0%,
+  rgba(120, 204, 109, 0.01) 100%
+);
+$boxShadowRight-dark: rgba(37, 26, 26, 0.3);
+$boxShadowLeft-dark: rgba(49, 49, 58, 0.3);
+$resumeDate-dark: #78cc6d;
+$resume-dark: #666;
+$resume-paragraph-dark: #ffffff8c;
+
+$left-dark: 20px;

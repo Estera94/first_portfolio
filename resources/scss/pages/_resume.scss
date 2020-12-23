@@ -1,0 +1,107 @@
+#content-resume {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.resume {
+  background-color: var(--cart-bg);
+  display: none;
+
+  .resume-detailes {
+    display: grid;
+    grid-template-columns: 55% 50%;
+    margin: 0px 30px 0 30px;
+
+    .resume-experience,
+    .resume-education {
+      max-width: 80%;
+
+      .resume-title {
+        display: flex;
+        align-items: center;
+
+        .icon {
+          font-size: 2rem;
+          color: var(--green-color);
+        }
+
+        .name {
+          font-size: 17px;
+          text-transform: uppercase;
+          margin-left: 0.6rem;
+          line-height: 14px;
+          color: var(--colorText);
+          font-weight: var(--font-weight-name);
+
+          &::after {
+            content: "";
+            margin: 40px 0px 0px -140px;
+            position: absolute;
+            width: 50%;
+            height: 1.5px;
+            background: var(--line-cart);
+          }
+        }
+      }
+
+      .resume-items {
+        margin-top: 10px;
+
+        .p-line::after {
+          content: "";
+          margin: 30px 0px;
+          position: absolute;
+          width: 50%;
+          height: 1.5px;
+          background-image: var(--line-cart);
+        }
+
+        .resume-item {
+          padding: 25px 0px 30px 0px;
+
+          .date-color {
+            color: var(--resume-date-green);
+            border: 1px solid var(--resume-date-green);
+            margin: 0 0 11px 0;
+            padding: 0 5px;
+            font-size: 11.5px;
+            font-weight: 400;
+            display: inline-block;
+            border-radius: 5px;
+          }
+
+          .date {
+            margin: 0 0 11px 0;
+            padding: 0 5px;
+            font-size: 11.5px;
+            color: var(--resume-date-grey);
+            font-weight: 400;
+            border: 1px solid var(--resume-date-grey);
+            display: inline-block;
+            border-radius: 5px;
+          }
+
+          .name {
+            font-size: 16px;
+            font-weight: var(--font-weight-resumeName);
+            color: var(--colorText);
+          }
+
+          .company {
+            margin: 0 0 11px 0;
+            font-size: 14px;
+            color: #999999;
+            font-weight: 400;
+          }
+
+          p {
+            color: var(--color-pharagraph);
+            font-size: 15.6px;
+          }
+        }
+      }
+    }
+  }
+}
