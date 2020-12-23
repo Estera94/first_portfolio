@@ -879,6 +879,7 @@ body .container {
 
 .projects {
   background-color: var(--cart-bg);
+  display: none;
 }
 
 .projects .title-work::after {
