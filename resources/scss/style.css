@@ -963,9 +963,6 @@ body .container {
   position: absolute;
   bottom: 50%;
   opacity: 0;
-  -webkit-transform: translate(-50%, 360px);
-          transform: translate(-50%, 360px);
-  left: 95px;
 }
 
 .projects .work-overlay:hover img {
@@ -975,8 +972,6 @@ body .container {
 }
 
 .projects figure.work-overlay:hover figcaption .worksLink {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
   opacity: 1;
 }
 

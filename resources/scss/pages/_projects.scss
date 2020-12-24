@@ -78,8 +78,6 @@
       position: absolute;
       bottom: 50%;
       opacity: 0;
-      transform: translate(-50%, 360px);
-      left: 95px;
     }
   }
 
@@ -88,7 +86,6 @@
     transform: scale(1.1);
   }
   figure.work-overlay:hover figcaption .worksLink {
-    transform: translate(0, 0);
     opacity: 1;
   }
 }
