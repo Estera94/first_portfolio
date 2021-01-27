@@ -1027,11 +1027,11 @@ body .container {
   height: 220px;
 }
 
-.contact1 .info-list {
+.contact1 .info-map {
   margin: 30px 30px;
 }
 
-.contact1 .info-list ul {
+.contact1 .info-map ul {
   list-style: none;
   display: -ms-grid;
   display: grid;
@@ -1044,7 +1044,7 @@ body .container {
   color: var(--color-pharagraph);
 }
 
-.contact1 .info-list ul span {
+.contact1 .info-map ul span {
   color: var(--colorText);
   font-size: 1rem;
   font-weight: var(--font-weight-spanAbout);
