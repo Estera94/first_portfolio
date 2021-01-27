@@ -1027,11 +1027,8 @@ body .container {
   height: 220px;
 }
 
-.contact1 .info-map {
-  margin: 30px 30px;
-}
-
 .contact1 .info-map ul {
+  margin: 15px 30px 0px 30px;
   list-style: none;
   display: -ms-grid;
   display: grid;

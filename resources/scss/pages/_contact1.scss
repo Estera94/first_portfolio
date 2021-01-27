@@ -19,8 +19,8 @@
   }
 
   .info-map {
-    margin: 30px 30px;
     ul {
+      margin: 15px 30px 0px 30px;
       list-style: none;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
