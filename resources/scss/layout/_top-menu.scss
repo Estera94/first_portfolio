@@ -53,4 +53,8 @@
   .menuHover {
     color: var(--green-color) !important;
   }
+
+  @include media("<desktop") {
+    display: none;
+  }
 }

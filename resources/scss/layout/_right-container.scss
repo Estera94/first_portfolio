@@ -86,4 +86,9 @@
     margin-top: 79.2%;
     transform: rotate(180deg);
   }
+
+  @include media("<desktop") {
+    width: 100vw;
+    height: 100vh;
+  }
 }
