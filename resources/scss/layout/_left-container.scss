@@ -112,6 +112,22 @@
     background: var(--line-cart);
   }
 
+  //MOBILE L 375px and 425px
+  @include media(">374px", "<=426px") {
+    .my-image {
+      width: 40%;
+    }
+
+    .footer-left {
+      margin-top: 12em;
+    }
+
+    .footer-left::before {
+      content: "";
+      margin-top: 12.5px;
+    }
+  }
+
   //DESKTOP
 
   @include media(">desktop") {

@@ -469,6 +469,18 @@ body .container {
   height: 1px;
   background: var(--line-cart);
 }
+@media (min-width: 375px) and (max-width: 426px) {
+  .left-container .my-image {
+    width: 40%;
+  }
+  .left-container .footer-left {
+    margin-top: 12em;
+  }
+  .left-container .footer-left::before {
+    content: "";
+    margin-top: 12.5px;
+  }
+}
 @media (min-width: 1367px) {
   .left-container {
     width: 31.25rem;
