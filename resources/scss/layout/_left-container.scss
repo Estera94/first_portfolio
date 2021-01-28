@@ -94,6 +94,24 @@
     font-weight: var(--font-weight-footer);
   }
 
+  .footer-left::before {
+    content: "";
+    margin-top: 8px;
+    position: absolute;
+    width: 15.5%;
+    height: 1px;
+    transform: rotate(90deg);
+    background: var(--line-cart);
+  }
+  .footer-left::after {
+    content: "";
+    margin-top: -20px;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--line-cart);
+  }
+
   //DESKTOP
 
   @include media(">desktop") {
@@ -160,19 +178,6 @@
     .footer-left::before {
       content: "";
       margin-top: 20px;
-      position: absolute;
-      width: 15.5%;
-      height: 1px;
-      transform: rotate(90deg);
-      background: var(--line-cart);
-    }
-    .footer-left::after {
-      content: "";
-      margin-top: -20px;
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      background: var(--line-cart);
     }
   }
 }
