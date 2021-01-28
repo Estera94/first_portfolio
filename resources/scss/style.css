@@ -240,16 +240,6 @@ body .container {
   position: relative;
   z-index: -1;
 }
-.right-container::before {
-  content: "";
-  background-color: transparent;
-  position: absolute;
-  z-index: 5;
-  width: 5%;
-  height: 100%;
-  margin-left: -40px;
-  box-shadow: 12px 0px 12px 2px var(--box-shadow);
-}
 .right-container .titles {
   font-size: 23px;
   color: var(--colorText);
@@ -290,16 +280,6 @@ body .container {
   height: 1.5px;
   transform: rotate(90deg);
   background: var(--line-cart);
-}
-.right-container .bottom::before {
-  content: "";
-  background-color: var(--cart-bg);
-  position: absolute;
-  z-index: 2;
-  width: 98.8%;
-  height: 5%;
-  margin-top: 79.2%;
-  transform: rotate(180deg);
 }
 @media (min-width: 1367px) {
   .right-container {
@@ -417,7 +397,7 @@ body .container {
   transform: rotate(-10deg);
 }
 .left-container .my-image {
-  width: 30%;
+  width: 45%;
   margin-left: auto;
   margin-right: auto;
   margin-top: -110px;
@@ -426,7 +406,7 @@ body .container {
   border-radius: 100%;
   border: solid 0.2rem var(--avatar-border);
   width: 100%;
-  height: 200px;
+  height: 100%;
   position: relative;
 }
 .left-container .left-container-text {
@@ -438,13 +418,14 @@ body .container {
   position: relative;
 }
 .left-container .left-container-text .title {
-  font-size: 34px;
+  font-size: 25px;
   font-weight: var(--font-weight-leftTitle);
   color: var(--colorText);
 }
 .left-container .left-container-text .subtitle {
   margin-top: 0.6rem;
-  font-size: 18px;
+  text-align: center;
+  font-size: 16px;
   color: var(--green-color);
   animation: yourName 3000ms ease-in-out 0s forwards;
 }
@@ -465,41 +446,11 @@ body .container {
 .left-container .footer-left {
   display: flex;
   justify-content: space-around;
-  margin-top: 22%;
+  margin-top: 9em;
   color: var(--colorText);
-  font-size: 0.9em;
+  font-size: 0.7em;
   text-transform: uppercase;
   font-weight: var(--font-weight-footer);
-}
-.left-container .footer-left .cv,
-.left-container .footer-left .contact {
-  transition: 0.2s;
-  cursor: pointer;
-}
-.left-container .footer-left .cv:hover,
-.left-container .footer-left .contact:hover {
-  color: var(--green-color);
-  font-weight: var(--font-weight-footer);
-  transition-timing-function: ease-in;
-}
-.left-container .footer-left::before {
-  content: "";
-  cursor: pointer;
-  margin-top: 20px;
-  position: absolute;
-  width: 15.5%;
-  height: 1px;
-  transform: rotate(90deg);
-  background: var(--line-cart);
-}
-.left-container .footer-left::after {
-  content: "";
-  cursor: pointer;
-  margin-top: -20px;
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background: var(--line-cart);
 }
 @media (min-width: 1367px) {
   .left-container {
@@ -510,34 +461,6 @@ body .container {
     background-color: var(--cart-bg);
     overflow: hidden;
     box-shadow: -10px -10px 0px 2px var(--box-shadow-left);
-  }
-  .left-container .slide {
-    height: 50%;
-    width: 100%;
-    background-image: url("https://st3.depositphotos.com/1184748/16121/v/600/depositphotos_161213072-stock-video-abstract-digital-vertical-and-horizontal.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0.3rem 0.3rem 0 0;
-  }
-  .left-container .slide::before {
-    content: "";
-    position: absolute;
-    left: -25%;
-    bottom: 27%;
-    width: 100%;
-    height: 25%;
-    transform: rotate(10deg);
-    background-color: var(--cart-bg);
-  }
-  .left-container .slide::after {
-    content: "";
-    position: absolute;
-    right: -25%;
-    bottom: 27%;
-    width: 100%;
-    height: 25%;
-    background-color: var(--cart-bg);
-    transform: rotate(-10deg);
   }
   .left-container .my-image {
     width: 30%;
@@ -562,47 +485,16 @@ body .container {
     border-radius: 100%;
     background: var(--image-shadow);
   }
-  .left-container .left-container-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 2;
-    position: relative;
-  }
   .left-container .left-container-text .title {
     font-size: 34px;
-    font-weight: var(--font-weight-leftTitle);
-    color: var(--colorText);
   }
   .left-container .left-container-text .subtitle {
     margin-top: 0.6rem;
     font-size: 18px;
-    color: var(--green-color);
-    animation: yourName 3000ms ease-in-out 0s forwards;
-  }
-  @keyframes yourName {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  .left-container .left-container-text .fab {
-    color: var(--colorText);
-    padding: 8px;
-    margin-top: 0.8rem;
-    font-size: large;
   }
   .left-container .footer-left {
-    display: flex;
-    justify-content: space-around;
     margin-top: 22%;
-    color: var(--colorText);
     font-size: 0.9em;
-    text-transform: uppercase;
-    font-weight: var(--font-weight-footer);
   }
   .left-container .footer-left .cv,
 .left-container .footer-left .contact {
@@ -617,7 +509,6 @@ body .container {
   }
   .left-container .footer-left::before {
     content: "";
-    cursor: pointer;
     margin-top: 20px;
     position: absolute;
     width: 15.5%;
@@ -627,7 +518,6 @@ body .container {
   }
   .left-container .footer-left::after {
     content: "";
-    cursor: pointer;
     margin-top: -20px;
     position: absolute;
     width: 100%;

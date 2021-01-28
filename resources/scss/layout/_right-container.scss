@@ -5,18 +5,6 @@
   position: relative;
   z-index: -1;
 
-  &::before {
-    content: "";
-
-    background-color: transparent;
-    position: absolute;
-    z-index: 5;
-    width: 5%;
-    height: 100%;
-    margin-left: -40px;
-    box-shadow: 12px 0px 12px 2px var(--box-shadow);
-  }
-
   .titles {
     font-size: 23px;
     color: var(--colorText);
@@ -67,16 +55,7 @@
     background: var(--line-cart);
   }
 
-  .bottom::before {
-    content: "";
-    background-color: var(--cart-bg);
-    position: absolute;
-    z-index: 2;
-    width: 98.8%;
-    height: 5%;
-    margin-top: 79.2%;
-    transform: rotate(180deg);
-  }
+  //DESKTOP
 
   @include media(">desktop") {
     background-color: var(--cart-bg);

@@ -1,3 +1,5 @@
+//DEFAULT 375px pe 612px
+
 .left-container {
   width: 100vw;
   height: 100vh;
@@ -36,7 +38,7 @@
     transform: rotate(-10deg);
   }
   .my-image {
-    width: 30%;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
     margin-top: -110px;
@@ -44,33 +46,24 @@
       border-radius: 100%;
       border: solid 0.2rem var(--avatar-border);
       width: 100%;
-      height: 200px;
+      height: 100%;
       position: relative;
     }
-
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 34.6%;
-    //   left: 169.5px;
-    //   width: 29%;
-    //   height: 150px;
-    //   border-radius: 100%;
-    //   background: var(--image-shadow);
-    // }
   }
+
   .left-container-text {
     @include flex(center, center, column);
     z-index: 2;
     position: relative;
     .title {
-      font-size: 34px;
+      font-size: 25px;
       font-weight: var(--font-weight-leftTitle);
       color: var(--colorText);
     }
     .subtitle {
       margin-top: 0.6rem;
-      font-size: 18px;
+      text-align: center;
+      font-size: 16px;
       color: var(--green-color);
       animation: yourName 3000ms ease-in-out 0s forwards;
 
@@ -94,45 +87,14 @@
   .footer-left {
     display: flex;
     justify-content: space-around;
-    margin-top: 22%;
+    margin-top: 9em;
     color: var(--colorText);
-    font-size: 0.9em;
+    font-size: 0.7em;
     text-transform: uppercase;
     font-weight: var(--font-weight-footer);
-
-    .cv,
-    .contact {
-      transition: 0.2s;
-      cursor: pointer;
-    }
-
-    .cv:hover,
-    .contact:hover {
-      color: var(--green-color);
-      font-weight: var(--font-weight-footer);
-      transition-timing-function: ease-in;
-    }
   }
 
-  .footer-left::before {
-    content: "";
-    cursor: pointer;
-    margin-top: 20px;
-    position: absolute;
-    width: 15.5%;
-    height: 1px;
-    transform: rotate(90deg);
-    background: var(--line-cart);
-  }
-  .footer-left::after {
-    content: "";
-    cursor: pointer;
-    margin-top: -20px;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background: var(--line-cart);
-  }
+  //DESKTOP
 
   @include media(">desktop") {
     width: 31.25rem;
@@ -143,36 +105,6 @@
     overflow: hidden;
     box-shadow: -10px -10px 0px 2px var(--box-shadow-left);
 
-    .slide {
-      height: 50%;
-      width: 100%;
-      background-image: url("https://st3.depositphotos.com/1184748/16121/v/600/depositphotos_161213072-stock-video-abstract-digital-vertical-and-horizontal.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-radius: 0.3rem 0.3rem 0 0;
-    }
-
-    .slide::before {
-      content: "";
-      position: absolute;
-      left: -25%;
-      bottom: 27%;
-      width: 100%;
-      height: 25%;
-      transform: rotate(10deg);
-      background-color: var(--cart-bg);
-    }
-
-    .slide::after {
-      content: "";
-      position: absolute;
-      right: -25%;
-      bottom: 27%;
-      width: 100%;
-      height: 25%;
-      background-color: var(--cart-bg);
-      transform: rotate(-10deg);
-    }
     .my-image {
       width: 30%;
       margin-left: auto;
@@ -198,45 +130,18 @@
       }
     }
     .left-container-text {
-      @include flex(center, center, column);
-      z-index: 2;
-      position: relative;
       .title {
         font-size: 34px;
-        font-weight: var(--font-weight-leftTitle);
-        color: var(--colorText);
       }
       .subtitle {
         margin-top: 0.6rem;
         font-size: 18px;
-        color: var(--green-color);
-        animation: yourName 3000ms ease-in-out 0s forwards;
-
-        @keyframes yourName {
-          0% /* (from) */ {
-            opacity: 0;
-          }
-          100% /* (to) */ {
-            opacity: 1;
-          }
-        }
-      }
-      .fab {
-        color: var(--colorText);
-        padding: 8px;
-        margin-top: 0.8rem;
-        font-size: large;
       }
     }
 
     .footer-left {
-      display: flex;
-      justify-content: space-around;
       margin-top: 22%;
-      color: var(--colorText);
       font-size: 0.9em;
-      text-transform: uppercase;
-      font-weight: var(--font-weight-footer);
 
       .cv,
       .contact {
@@ -254,7 +159,6 @@
 
     .footer-left::before {
       content: "";
-      cursor: pointer;
       margin-top: 20px;
       position: absolute;
       width: 15.5%;
@@ -264,7 +168,6 @@
     }
     .footer-left::after {
       content: "";
-      cursor: pointer;
       margin-top: -20px;
       position: absolute;
       width: 100%;
