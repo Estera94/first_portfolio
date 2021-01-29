@@ -112,14 +112,20 @@
     background: var(--line-cart);
   }
 
-  //MOBILE L 375px and 425px
-  @include media(">374px", "<=426px") {
+  // //MOBILE L 375px and 425px
+
+  @include media(">375px", "<=425px") {
+    margin: auto;
+    width: 93%;
+    height: 100vh;
     .my-image {
-      width: 40%;
+      width: 35%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .footer-left {
-      margin-top: 12em;
+      margin-top: 13em;
     }
 
     .footer-left::before {
@@ -128,15 +134,92 @@
     }
   }
 
-  //DESKTOP
+  //TABLET 1024px
 
-  @include media(">desktop") {
+  @include media(">425px", "<1024px") {
+    margin: auto;
+    width: 94%;
+    height: 100vh;
+    .my-image {
+      width: 25%;
+    }
+
+    .footer-left {
+      font-size: 0.9em;
+    }
+  }
+
+  //LARGE TABLET
+  @include media(">=1024px", "<desktop") {
     width: 31.25rem;
     height: 40.5rem;
     border-radius: 0.3rem;
-    position: relative;
-    background-color: var(--cart-bg);
-    overflow: hidden;
+    box-shadow: -10px -10px 0px 2px var(--box-shadow-left);
+
+    .my-image {
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -110px;
+      #my-img {
+        border-radius: 100%;
+        border: solid 0.2rem var(--avatar-border);
+        width: 100%;
+        height: 150px;
+        position: relative;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 34.6%;
+        left: 169.5px;
+        width: 29%;
+        height: 150px;
+        border-radius: 100%;
+        background: var(--image-shadow);
+      }
+    }
+    .left-container-text {
+      .title {
+        font-size: 34px;
+      }
+      .subtitle {
+        margin-top: 0.6rem;
+        font-size: 18px;
+      }
+    }
+
+    .footer-left {
+      margin-top: 22%;
+      font-size: 0.9em;
+
+      .cv,
+      .contact {
+        transition: 0.2s;
+        cursor: pointer;
+      }
+
+      .cv:hover,
+      .contact:hover {
+        color: var(--green-color);
+        font-weight: var(--font-weight-footer);
+        transition-timing-function: ease-in;
+      }
+    }
+
+    .footer-left::before {
+      content: "";
+      margin-top: 20px;
+    }
+  }
+
+  //DESKTOP
+
+  @include media(">=desktop") {
+    width: 31.25rem;
+    height: 40.5rem;
+    border-radius: 0.3rem;
     box-shadow: -10px -10px 0px 2px var(--box-shadow-left);
 
     .my-image {

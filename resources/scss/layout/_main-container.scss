@@ -20,7 +20,7 @@ body {
     z-index: 1;
     font-family: "Poppins", sans-serif;
 
-    @include media("<desktop") {
+    @include media("<1024px") {
       display: block;
     }
   }
