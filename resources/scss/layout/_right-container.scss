@@ -1,9 +1,6 @@
 .right-container {
   width: 100vw;
   height: 100vh;
-  background-color: var(--cart-bg);
-  position: relative;
-  z-index: -1;
 
   .titles {
     font-size: 23px;
@@ -12,7 +9,7 @@
     min-height: 50px;
     line-height: 19px;
     padding: 20px;
-    margin: 20px;
+    margin: 10px 0px 0px 10px;
 
     .first-word {
       color: var(--green-color);
@@ -21,8 +18,7 @@
     .first-word::before {
       content: "";
       position: absolute;
-      left: 27px;
-      top: 37px;
+      left: 22px;
       width: 30px;
       height: 30px;
       background: linear-gradient(
@@ -57,9 +53,13 @@
 
   //DESKTOP
 
-  @include media(">desktop") {
+  @include media(">=desktop") {
     width: 46rem;
     height: 38.3rem;
+    background-color: var(--cart-bg);
+    position: relative;
+    z-index: -1;
+    overflow-x: hidden;
 
     &::before {
       content: "";
@@ -70,6 +70,17 @@
       height: 100%;
       margin-left: -40px;
       box-shadow: 12px 0px 12px 2px var(--box-shadow);
+    }
+
+    .titles {
+      padding: 20px;
+      margin: 20px;
+
+      .first-word::before {
+        content: "";
+        position: absolute;
+        left: 31px;
+      }
     }
   }
 }

@@ -1,10 +1,8 @@
-#content-about {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow-x: hidden;
-}
+// #content-about {
+//   // position: relative;
+//   // width: 100%;
+//   // height: auto;
+// }
 
 .about {
   background-color: var(--cart-bg);
@@ -14,24 +12,21 @@
   .row {
     display: flex;
     flex-direction: column;
-    margin: 0px 40px 0 30px;
+    margin: 20px 30px 0 30px;
 
     .text-about {
-      line-height: 1.8em;
+      line-height: 1.6em;
       margin: 0 0 25px 0;
-      font-size: 1rem;
+      font-size: 15px;
     }
 
     .info-list {
       ul {
         list-style: none;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
 
         span {
           color: var(--colorText);
-          font-size: 14px;
+          font-size: 13px;
           text-transform: uppercase;
           font-weight: var(--font-weight-spanAbout);
         }
@@ -42,43 +37,29 @@
   .fan-fact {
     position: relative;
     display: flex;
-
-    &::after {
-      content: "";
-      margin: 340px 0px 0 115px;
-      position: absolute;
-      width: 70%;
-      height: 2px;
-      transform: rotate(90deg);
-      background: var(--line-cart);
-    }
   }
 
   .fact-items {
-    display: grid;
-    grid-template-columns: 50% 45%;
-    justify-content: center;
-
     .fact-item {
       margin: 30px 0px 0px 20px;
       display: flex;
       flex-direction: column;
-      max-width: 70%;
-      line-height: 1.8em;
+      max-width: 90%;
+      line-height: 1.6em;
 
       .fa-icon {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         color: var(--green-color);
-        margin-left: 14px;
+        margin-left: 15px;
         position: relative;
 
         &::after {
           content: "";
           position: absolute;
-          left: -15px;
-          bottom: -15px;
-          width: 60px;
-          height: 60px;
+          left: -10px;
+          bottom: -10px;
+          width: 45px;
+          height: 45px;
           background: linear-gradient(
             to left,
             rgba(255, 0, 0, 0),
@@ -91,25 +72,128 @@
       }
 
       .fact-name {
-        margin-top: 10px;
         color: var(--colorText);
         font-weight: var(--font-weight-factRight);
         margin-top: 25px;
+        font-size: 17px;
+        margin-left: 13px;
       }
 
       .grey-text {
-        margin-bottom: 20px;
+        margin-left: 13px;
+        margin-bottom: 5px;
         position: relative;
+        font-size: 15px;
+      }
+    }
+  }
 
-        &::before {
-          content: "";
-          margin: 130px 0px 0px 0px;
-          position: absolute;
-          width: 150%;
-          height: 1px;
-          background: var(--line-cart);
+  //DESKTOP
+
+  @include media(">=desktop") {
+    #content-about {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow-x: hidden;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 40px 0 30px;
+
+      .text-about {
+        line-height: 1.8em;
+        margin: 0 0 25px 0;
+        font-size: 1rem;
+      }
+
+      .info-list {
+        ul {
+          list-style: none;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+
+          span {
+            color: var(--colorText);
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: var(--font-weight-spanAbout);
+          }
         }
       }
+    }
+
+    .fact-items {
+      display: grid;
+      grid-template-columns: 50% 45%;
+      justify-content: center;
+
+      .fact-item {
+        margin: 30px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        line-height: 1.8em;
+
+        .fa-icon {
+          font-size: 1.7rem;
+          color: var(--green-color);
+          margin-left: 14px;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: -15px;
+            bottom: -15px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(
+              to left,
+              rgba(255, 0, 0, 0),
+              var(--green-color)
+            );
+            border-radius: 50%;
+            z-index: 1;
+            opacity: 0.2;
+          }
+        }
+
+        .fact-name {
+          margin-top: 10px;
+          color: var(--colorText);
+          font-weight: var(--font-weight-factRight);
+          margin-top: 25px;
+        }
+
+        .grey-text {
+          margin-bottom: 20px;
+          position: relative;
+        }
+      }
+    }
+
+    .fan-fact::after {
+      content: "";
+      margin: 340px 0px 0 115px;
+      position: absolute;
+      width: 70%;
+      height: 2px;
+      transform: rotate(90deg);
+      background: var(--line-cart);
+    }
+
+    .grey-text::before {
+      content: "";
+      margin: 130px 0px 0px 0px;
+      position: absolute;
+      width: 150%;
+      height: 1px;
+      background: var(--line-cart);
     }
   }
 }
