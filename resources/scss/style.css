@@ -785,10 +785,12 @@ body .container {
 @media (max-width: 425px) {
   .top-menu {
     display: flex;
+    display: -ms-inline-flexbox;
   }
   .top-menu ul {
     border: none;
     display: flex;
+    display: -ms-inline-flexbox;
     width: 84.5vw;
     border-radius: 0px 5px 5px 0px;
     height: 52px;
