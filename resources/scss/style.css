@@ -258,7 +258,7 @@ body .container {
 }
 .right-container .titles::before {
   content: "";
-  margin: 45px 0px 0 -100px;
+  margin: 48px 0px 0px -100px;
   position: absolute;
   width: 100%;
   height: 2px;
@@ -266,7 +266,7 @@ body .container {
 }
 .right-container .title-line::after {
   content: "";
-  margin: 302px 0px 0 -25px;
+  margin: 312px 0px 0px -25px;
   position: absolute;
   width: 70%;
   height: 1.5px;
@@ -293,14 +293,17 @@ body .container {
     box-shadow: 12px 0px 12px 2px var(--box-shadow);
   }
   .right-container .titles {
-    padding: 20px;
-    margin: 20px;
+    padding: 17px;
   }
   .right-container .titles .first-word::before {
     content: "";
     position: absolute;
-    left: 45px;
+    left: 20px;
     margin-top: 5px;
+  }
+  .right-container .titles::before {
+    content: "";
+    margin: 50px 0px 0px -100px;
   }
 }
 @media (min-width: 1366px) {
@@ -323,14 +326,17 @@ body .container {
     box-shadow: 12px 0px 12px 2px var(--box-shadow);
   }
   .right-container .titles {
-    padding: 20px;
-    margin: 20px;
+    padding: 17px;
   }
   .right-container .titles .first-word::before {
     content: "";
     position: absolute;
-    left: 45px;
+    left: 20px;
     margin-top: 5px;
+  }
+  .right-container .titles::before {
+    content: "";
+    margin: 50px 0px 0px -100px;
   }
 }
 
@@ -605,7 +611,7 @@ body .container {
 }
 @media (min-width: 1024px) and (max-width: 1365px) {
   .left-container {
-    max-width: 28.25rem;
+    max-width: 25.25rem;
     height: 38rem;
     border-radius: 0.3rem;
     box-shadow: -10px -10px 0px 2px var(--box-shadow-left);
@@ -751,7 +757,7 @@ body .container {
 .top-menu .menuHover {
   color: var(--green-color) !important;
 }
-@media (min-width: 1006px) and (max-width: 1023px) {
+@media (min-width: 1006px) and (max-width: 1022px) {
   .top-menu {
     height: 40.25rem;
     padding: 0.4em;
@@ -799,7 +805,7 @@ body .container {
     background: var(--top-menuLine);
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .top-menu {
     display: none;
   }
@@ -817,11 +823,11 @@ body .container {
 }
 .about .row .text-about {
   line-height: 1.7;
-  margin: 0 0 25px 0;
   font-size: 15px;
 }
 .about .row .info-list {
   line-height: 1.7;
+  margin-top: 15px;
 }
 .about .row .info-list ul {
   list-style: none;
@@ -878,11 +884,10 @@ body .container {
   .about .row {
     display: flex;
     flex-direction: column;
-    margin: 0px 40px 0 30px;
+    margin: 8px 40px 0 30px;
   }
   .about .row .text-about {
     line-height: 1.8em;
-    margin: 0 0 25px 0;
     font-size: 1rem;
   }
   .about .row .info-list ul {
@@ -903,11 +908,10 @@ body .container {
   .about .row {
     display: flex;
     flex-direction: column;
-    margin: 0px 40px 0 30px;
+    margin: 12px 40px 0 30px;
   }
   .about .row .text-about {
     line-height: 1.8em;
-    margin: 0 0 25px 0;
     font-size: 1rem;
   }
   .about .row .info-list ul {

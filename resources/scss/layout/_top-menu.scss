@@ -56,7 +56,7 @@
 
   //TABLET
 
-  @include media(">1005px", "<1024px") {
+  @include media(">1005px", "<1023px") {
     height: 40.25rem;
     padding: 0.4em;
     position: relative;
@@ -109,8 +109,8 @@
     }
   }
 
-  //DESKTO
-  @include media("<=1024px") {
+  //DESKTOP
+  @include media("<=1023px") {
     display: none;
   }
 }

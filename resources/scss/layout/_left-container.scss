@@ -309,7 +309,7 @@
   //LARGE TABLET
 
   @include media(">=1024px", "<desktop") {
-    max-width: 28.25rem;
+    max-width: 25.25rem;
     height: 38rem;
     border-radius: 0.3rem;
     box-shadow: -10px -10px 0px 2px var(--box-shadow-left);
