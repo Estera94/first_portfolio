@@ -7,9 +7,6 @@
     border: 1.5px solid grey;
     list-style: none;
     border-radius: 0.3rem;
-    // background-color: var(--cart-bg);
-    background: none;
-    padding: 0rem 0.27rem;
 
     .nav {
       a {
@@ -52,18 +49,17 @@
     }
   }
 
-  // UNDER 400px//////////////////////
+  // UNDER 400px
   @include media("<=425px") {
     display: flex;
     background-color: var(--cart-bg);
     height: 52px;
+    border-radius: 5px 5px;
 
     ul {
       border: none;
       display: flex;
       width: 84.5vw;
-      border-radius: 0px 5px 5px 0px;
-      height: 52px;
 
       li {
         width: 100%;
@@ -87,6 +83,7 @@
 
   @include media(">=425px", "<=552px") {
     ul {
+      background-color: var(--cart-bg);
       .nav {
         padding: 0rem;
 
@@ -105,6 +102,10 @@
     }
   }
 
+  @include media(">552px", "<1023px") {
+    background-color: var(--cart-bg);
+  }
+
   //DESKTOP
   @include media(">=1023px") {
     position: relative;
@@ -113,6 +114,7 @@
     z-index: 1;
 
     ul {
+      background-color: var(--cart-bg);
       border: none;
     }
 

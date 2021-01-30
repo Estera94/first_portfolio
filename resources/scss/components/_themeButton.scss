@@ -28,17 +28,15 @@ input[type="checkbox"] {
     width: 20px;
   }
 
-  //////////////////////////////////////////////
+  // MEDIA 425px
   @include media("<=425px") {
     width: 55px;
     font-size: 0.6rem;
-    border-radius: 5px 0px 0px 5px;
     background: none;
-    // height: 52px;
 
     .fa-moon {
       width: 19px;
-      margin-bottom: 13px;
+      margin-bottom: 23px;
     }
 
     .ball {

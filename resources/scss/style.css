@@ -181,12 +181,11 @@ input[type=checkbox] {
   .label {
     width: 55px;
     font-size: 0.6rem;
-    border-radius: 5px 0px 0px 5px;
     background: none;
   }
   .label .fa-moon {
     width: 19px;
-    margin-bottom: 13px;
+    margin-bottom: 23px;
   }
   .label .ball {
     top: 30px;
@@ -745,8 +744,6 @@ body .container {
   border: 1.5px solid grey;
   list-style: none;
   border-radius: 0.3rem;
-  background: none;
-  padding: 0rem 0.27rem;
 }
 .top-menu ul .nav a {
   color: var(--colorText);
@@ -787,13 +784,12 @@ body .container {
     display: flex;
     background-color: var(--cart-bg);
     height: 52px;
+    border-radius: 5px 5px;
   }
   .top-menu ul {
     border: none;
     display: flex;
     width: 84.5vw;
-    border-radius: 0px 5px 5px 0px;
-    height: 52px;
   }
   .top-menu ul li {
     width: 100%;
@@ -810,6 +806,9 @@ body .container {
   }
 }
 @media (min-width: 425px) and (max-width: 552px) {
+  .top-menu ul {
+    background-color: var(--cart-bg);
+  }
   .top-menu ul .nav {
     padding: 0rem;
   }
@@ -823,6 +822,11 @@ body .container {
     padding-bottom: 25px;
   }
 }
+@media (min-width: 553px) and (max-width: 1022px) {
+  .top-menu {
+    background-color: var(--cart-bg);
+  }
+}
 @media (min-width: 1023px) {
   .top-menu {
     position: relative;
@@ -831,6 +835,7 @@ body .container {
     z-index: 1;
   }
   .top-menu ul {
+    background-color: var(--cart-bg);
     border: none;
   }
   .top-menu .menuHover {
