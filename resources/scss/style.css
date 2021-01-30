@@ -273,6 +273,36 @@ body .container {
   transform: rotate(90deg);
   background: var(--line-cart);
 }
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .right-container {
+    width: 36rem;
+    height: 35.3rem;
+    background-color: var(--cart-bg);
+    position: relative;
+    z-index: -1;
+    overflow-x: hidden;
+  }
+  .right-container::before {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    width: 5%;
+    height: 100%;
+    margin-left: -40px;
+    box-shadow: 12px 0px 12px 2px var(--box-shadow);
+  }
+  .right-container .titles {
+    padding: 20px;
+    margin: 20px;
+  }
+  .right-container .titles .first-word::before {
+    content: "";
+    position: absolute;
+    left: 45px;
+    margin-top: 5px;
+  }
+}
 @media (min-width: 1366px) {
   .right-container {
     width: 46rem;
@@ -575,16 +605,10 @@ body .container {
 }
 @media (min-width: 1024px) and (max-width: 1365px) {
   .left-container {
-    width: 31.25rem;
-    height: 40.5rem;
+    max-width: 28.25rem;
+    height: 38rem;
     border-radius: 0.3rem;
     box-shadow: -10px -10px 0px 2px var(--box-shadow-left);
-  }
-  .left-container .my-image {
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -110px;
   }
   .left-container .my-image #my-img {
     border-radius: 100%;
@@ -592,16 +616,6 @@ body .container {
     width: 100%;
     height: 150px;
     position: relative;
-  }
-  .left-container .my-image::before {
-    content: "";
-    position: absolute;
-    top: 34.6%;
-    left: 169.5px;
-    width: 29%;
-    height: 150px;
-    border-radius: 100%;
-    background: var(--image-shadow);
   }
   .left-container .left-container-text .title {
     font-size: 34px;
@@ -611,7 +625,7 @@ body .container {
     font-size: 18px;
   }
   .left-container .footer-left {
-    margin-top: 22%;
+    margin-top: 80px;
     font-size: 0.9em;
   }
   .left-container .footer-left .cv,
@@ -737,7 +751,55 @@ body .container {
 .top-menu .menuHover {
   color: var(--green-color) !important;
 }
-@media (max-width: 1365px) {
+@media (min-width: 1006px) and (max-width: 1023px) {
+  .top-menu {
+    height: 40.25rem;
+    padding: 0.4em;
+    position: relative;
+    z-index: 1;
+  }
+  .top-menu ul {
+    list-style: none;
+    border-radius: 0.3rem;
+    background-color: var(--cart-bg);
+    padding: 0rem 0.27rem;
+  }
+  .top-menu ul .nav a {
+    color: var(--colorText);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 0.2rem 0rem 0.2rem;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-icon);
+    transition: 0.2s;
+  }
+  .top-menu ul .nav a .link {
+    font-size: 0.75rem;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  .top-menu ul .nav a .fas {
+    margin-bottom: 0.4rem;
+  }
+  .top-menu ul .nav a:hover {
+    color: var(--green-color);
+    transition-timing-function: ease-in;
+    font-weight: var(--font-weight-icon);
+  }
+  .top-menu ul .nav .underline::after {
+    content: "";
+    cursor: pointer;
+    margin-top: 90%;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--top-menuLine);
+  }
+}
+@media (max-width: 1024px) {
   .top-menu {
     display: none;
   }
@@ -811,6 +873,24 @@ body .container {
   margin-bottom: 5px;
   position: relative;
   font-size: 15px;
+}
+@media (min-width: 801px) and (max-width: 1366px) {
+  .about .row {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px 0 30px;
+  }
+  .about .row .text-about {
+    line-height: 1.8em;
+    margin: 0 0 25px 0;
+    font-size: 1rem;
+  }
+  .about .row .info-list ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 }
 @media (min-width: 1366px) {
   .about #content-about {
@@ -898,30 +978,6 @@ body .container {
     width: 150%;
     height: 1px;
     background: var(--line-cart);
-  }
-}
-@media (min-width: 801px) and (max-width: 1000px) {
-  .about .row {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 40px 0 30px;
-  }
-  .about .row .text-about {
-    line-height: 1.8em;
-    margin: 0 0 25px 0;
-    font-size: 1rem;
-  }
-  .about .row .info-list ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-  .about .row .info-list ul span {
-    color: var(--colorText);
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: var(--font-weight-spanAbout);
   }
 }
 

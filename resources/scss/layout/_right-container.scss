@@ -1,7 +1,4 @@
 .right-container {
-  // width: 100vw;
-  // height: 100vh;
-
   .titles {
     font-size: 23px;
     color: var(--colorText);
@@ -49,6 +46,40 @@
     height: 1.5px;
     transform: rotate(90deg);
     background: var(--line-cart);
+  }
+
+  //TABLET 1024PX
+
+  @include media(">=1024px", "<desktop") {
+    width: 36rem;
+    height: 35.3rem;
+    background-color: var(--cart-bg);
+    position: relative;
+    z-index: -1;
+    overflow-x: hidden;
+
+    &::before {
+      content: "";
+      background-color: transparent;
+      position: absolute;
+      z-index: 5;
+      width: 5%;
+      height: 100%;
+      margin-left: -40px;
+      box-shadow: 12px 0px 12px 2px var(--box-shadow);
+    }
+
+    .titles {
+      padding: 20px;
+      margin: 20px;
+
+      .first-word::before {
+        content: "";
+        position: absolute;
+        left: 45px;
+        margin-top: 5px;
+      }
+    }
   }
 
   //DESKTOP
