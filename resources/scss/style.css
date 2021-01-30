@@ -787,11 +787,12 @@ body .container {
     display: flex;
   }
   .top-menu ul {
+    background-color: red;
     border: none;
     display: flex;
     width: 84.5vw;
     border-radius: 0px 5px 5px 0px;
-    height: 52px;
+    height: 93%;
   }
   .top-menu ul li {
     width: 100%;
