@@ -745,7 +745,7 @@ body .container {
   border: 1.5px solid grey;
   list-style: none;
   border-radius: 0.3rem;
-  background-color: var(--cart-bg);
+  background: none;
   padding: 0rem 0.27rem;
 }
 .top-menu ul .nav a {
