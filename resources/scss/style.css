@@ -789,6 +789,11 @@ body .container {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
   .top-menu ul {
     border: none;
@@ -797,6 +802,11 @@ body .container {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     width: 84.5vw;
     border-radius: 0px 5px 5px 0px;
     height: 52px;
