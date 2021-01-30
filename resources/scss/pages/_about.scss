@@ -197,4 +197,36 @@
       background: var(--line-cart);
     }
   }
+
+  //display flex
+
+  @include media(">800px", "<=1000px") {
+    .row {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 40px 0 30px;
+
+      .text-about {
+        line-height: 1.8em;
+        margin: 0 0 25px 0;
+        font-size: 1rem;
+      }
+
+      .info-list {
+        ul {
+          list-style: none;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+
+          span {
+            color: var(--colorText);
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: var(--font-weight-spanAbout);
+          }
+        }
+      }
+    }
+  }
 }
