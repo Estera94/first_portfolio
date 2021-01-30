@@ -50,7 +50,7 @@
 
   //TABLET 1024PX
 
-  @include media(">=1024px", "<desktop") {
+  @include media(">=1023px", "<desktop") {
     width: 36rem;
     height: 35.3rem;
     background-color: var(--cart-bg);

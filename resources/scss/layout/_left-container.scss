@@ -261,9 +261,9 @@
     }
   }
 
-  //TABLET 1005px.............................
+  //TABLET 1005px
 
-  @include media(">1005px", "<1024px") {
+  @include media(">1005px", "<1023px") {
     min-height: 625px;
     max-height: 625px;
 
@@ -308,7 +308,7 @@
 
   //LARGE TABLET
 
-  @include media(">=1024px", "<desktop") {
+  @include media(">=1023px", "<desktop") {
     max-width: 25.25rem;
     height: 38rem;
     border-radius: 0.3rem;

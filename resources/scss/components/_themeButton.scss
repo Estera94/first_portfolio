@@ -27,6 +27,39 @@ input[type="checkbox"] {
     height: 18px;
     width: 20px;
   }
+
+  //////////////////////////////////////////////
+  @include media("<=425px") {
+    width: 55px;
+    font-size: 0.6rem;
+    border-radius: 5px 0px 0px 5px;
+    height: 52px;
+
+    .fa-moon {
+      width: 19px;
+      margin-bottom: 13px;
+    }
+
+    .ball {
+      top: 30px;
+    }
+  }
+
+  //MEDIA 400px to 552px
+
+  @include media(">=425px", "<=552px") {
+    width: 55px;
+    font-size: 0.7rem;
+
+    .fa-moon {
+      width: 17px;
+      margin-bottom: 10px;
+    }
+
+    .ball {
+      top: 35px;
+    }
+  }
 }
 
 .mode-button {

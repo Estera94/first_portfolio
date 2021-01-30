@@ -1,10 +1,10 @@
 .top-menu {
-  height: 40.25rem;
-  padding: 0.4em;
-  position: relative;
-  z-index: 1;
+  margin: 5px;
+  position: absolute;
+  z-index: 5;
 
   ul {
+    border: 1.5px solid grey;
     list-style: none;
     border-radius: 0.3rem;
     background-color: var(--cart-bg);
@@ -50,67 +50,71 @@
       }
     }
   }
-  .menuHover {
-    color: var(--green-color) !important;
-  }
 
-  //TABLET
+  // UNDER 400px//////////////////////
+  @include media("<=425px") {
+    display: flex;
 
-  @include media(">1005px", "<1023px") {
-    height: 40.25rem;
-    padding: 0.4em;
-    position: relative;
-    z-index: 1;
     ul {
-      list-style: none;
-      border-radius: 0.3rem;
-      background-color: var(--cart-bg);
-      padding: 0rem 0.27rem;
+      border: none;
+      display: flex;
+      width: 84.5vw;
+      border-radius: 0px 5px 5px 0px;
+      height: 52px;
 
+      li {
+        width: 100%;
+      }
       .nav {
+        padding: 0rem;
+
         a {
-          color: var(--colorText);
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 1.2rem 0.2rem 0rem 0.2rem;
-          position: relative;
-          text-decoration: none;
-          font-size: 1.4rem;
-          font-weight: var(--font-weight-icon);
-          transition: 0.2s;
+          font-size: 1rem;
+          margin-top: -0.8rem;
 
           .link {
-            font-size: 0.75rem;
-            padding-bottom: 0.5rem;
-            text-transform: uppercase;
-          }
-
-          .fas {
-            margin-bottom: 0.4rem;
-          }
-
-          &:hover {
-            color: var(--green-color);
-            transition-timing-function: ease-in;
-            font-weight: var(--font-weight-icon);
+            font-size: 0.6rem;
           }
         }
-        .underline::after {
-          content: "";
-          cursor: pointer;
-          margin-top: 90%;
-          position: absolute;
-          width: 100%;
-          height: 1px;
-          background: var(--top-menuLine);
+      }
+    }
+  }
+
+  // SMALL SCREEN 400px to 552px
+
+  @include media(">=425px", "<=552px") {
+    ul {
+      .nav {
+        padding: 0rem;
+
+        a {
+          font-size: 1rem;
+
+          .link {
+            font-size: 0.5rem;
+          }
+
+          .link4 {
+            padding-bottom: 25px;
+          }
         }
       }
     }
   }
 
   //DESKTOP
-  @include media("<=1023px") {
-    display: none;
+  @include media(">=1023px") {
+    position: relative;
+    height: 40.25rem;
+    padding: 0.4em;
+    z-index: 1;
+
+    ul {
+      border: none;
+    }
+
+    .menuHover {
+      color: var(--green-color) !important;
+    }
   }
 }
