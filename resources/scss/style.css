@@ -182,7 +182,7 @@ input[type=checkbox] {
     width: 55px;
     font-size: 0.6rem;
     border-radius: 5px 0px 0px 5px;
-    height: 52px;
+    height: 93%;
   }
   .label .fa-moon {
     width: 19px;
@@ -784,29 +784,11 @@ body .container {
 }
 @media (max-width: 425px) {
   .top-menu {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    display: -webkit-inline-box;
-    display: -moz-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
   }
   .top-menu ul {
     border: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    display: -webkit-inline-box;
-    display: -moz-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
     width: 84.5vw;
     border-radius: 0px 5px 5px 0px;
     height: 52px;
