@@ -182,7 +182,7 @@ input[type=checkbox] {
     width: 55px;
     font-size: 0.6rem;
     border-radius: 5px 0px 0px 5px;
-    height: 94%;
+    background: none;
   }
   .label .fa-moon {
     width: 19px;
@@ -785,13 +785,15 @@ body .container {
 @media (max-width: 425px) {
   .top-menu {
     display: flex;
+    background-color: var(--cart-bg);
+    height: 52px;
   }
   .top-menu ul {
     border: none;
     display: flex;
     width: 84.5vw;
     border-radius: 0px 5px 5px 0px;
-    height: 93%;
+    height: 52px;
   }
   .top-menu ul li {
     width: 100%;
