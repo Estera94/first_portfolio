@@ -54,12 +54,12 @@
   // UNDER 400px//////////////////////
   @include media("<=425px") {
     display: flex;
-    display: -ms-inline-flexbox;
+    display: -webkit-flex;
 
     ul {
       border: none;
       display: flex;
-      display: -ms-inline-flexbox;
+      display: -webkit-flex;
       width: 84.5vw;
       border-radius: 0px 5px 5px 0px;
       height: 52px;
