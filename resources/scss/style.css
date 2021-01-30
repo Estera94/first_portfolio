@@ -784,10 +784,18 @@ body .container {
 }
 @media (max-width: 425px) {
   .top-menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
   .top-menu ul {
     border: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     width: 84.5vw;
     border-radius: 0px 5px 5px 0px;
