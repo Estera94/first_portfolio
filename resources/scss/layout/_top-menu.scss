@@ -8,9 +8,6 @@
     list-style: none;
     border-radius: 0.3rem;
 
-    //margine dreapte la contact
-    // margin-right: -0.35rem;
-
     .nav {
       a {
         color: var(--colorText);
@@ -63,6 +60,7 @@
       border: none;
       display: flex;
       width: 84.5vw;
+      margin-left: -0.1rem;
 
       li {
         width: 100%;

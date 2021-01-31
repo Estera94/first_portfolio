@@ -185,7 +185,6 @@ input[type=checkbox] {
   }
   .label .fa-moon {
     width: 19px;
-    margin-bottom: 19px;
   }
   .label .ball {
     top: 30px;
@@ -790,6 +789,7 @@ body .container {
     border: none;
     display: flex;
     width: 84.5vw;
+    margin-left: -0.1rem;
   }
   .top-menu ul li {
     width: 100%;
