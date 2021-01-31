@@ -189,6 +189,7 @@ input[type=checkbox] {
   }
   .label .ball {
     top: 30px;
+    background-color: pink;
   }
 }
 @media (min-width: 425px) and (max-width: 552px) {
