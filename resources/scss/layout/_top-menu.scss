@@ -49,35 +49,36 @@
     }
   }
 
-  // UNDER 400px
-  @include media("<=425px") {
-    display: flex;
-    background-color: var(--cart-bg);
-    height: 52px;
-    border-radius: 5px 5px;
+  //MEDIA 209px
+  @include media("<=299px") {
+    @include top-menu(-1.3rem);
+  }
 
-    ul {
-      border: none;
-      display: flex;
-      width: 84.5vw;
-      margin-left: -0.1rem;
+  //MEDIA 209px
+  @include media(">299px", "<338px") {
+    @include top-menu(-1rem);
+  }
 
-      li {
-        width: 100%;
-      }
-      .nav {
-        padding: 0rem;
+  //MEDIA 340px
+  @include media(">=338px", "<381px") {
+    @include top-menu(-0.6rem);
+  }
 
-        a {
-          font-size: 1rem;
-          margin-top: -0.8rem;
+  //MEDIA 381px to 402px
+  @include media(">=381px", "<=404px") {
+    @include top-menu(-0.3rem);
+  }
 
-          .link {
-            font-size: 0.6rem;
-          }
-        }
-      }
-    }
+  //MEDIA 402px to 412px
+
+  @include media(">404px", "<=412px") {
+    @include top-menu(-0.2rem);
+  }
+
+  // MEDIA 411px to 425px
+
+  @include media(">412px", "<=425px") {
+    @include top-menu(0px);
   }
 
   // SMALL SCREEN 400px to 552px

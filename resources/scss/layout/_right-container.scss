@@ -1,4 +1,5 @@
 .right-container {
+  z-index: -9;
   .titles {
     font-size: 23px;
     color: var(--colorText);
@@ -120,6 +121,28 @@
         content: "";
         margin: 50px 0px 0px -100px;
       }
+    }
+
+    //////////////////////////////////
+    .bottom::after {
+      content: "";
+      // background-color: var(--cart-bg);
+      background-color: blue;
+      position: fixed;
+      z-index: 2;
+      width: 725px;
+      height: 3.8%;
+      transform: rotate(180deg);
+    }
+    .bottom::before {
+      content: "";
+      // background-color: var(--cart-bg);
+      background: red;
+      position: fixed;
+      z-index: 2;
+      width: 725px;
+      height: 3.8%;
+      margin-top: 36.5rem;
     }
   }
 }

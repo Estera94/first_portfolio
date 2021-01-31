@@ -9,3 +9,52 @@
   width: 100%;
   height: 100%;
 }
+
+//top menu page
+
+@mixin top-menu($marginTopRight) {
+  display: flex;
+  background-color: var(--cart-bg);
+  height: 52px;
+  border-radius: 5px 5px;
+
+  ul {
+    border: none;
+    display: flex;
+    width: 84.5vw;
+    margin-left: $marginTopRight;
+
+    li {
+      width: 100%;
+    }
+    .nav {
+      padding: 0rem;
+
+      a {
+        font-size: 1rem;
+        margin-top: -0.8rem;
+
+        .link {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
+
+//Contact page
+
+@mixin contact {
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 2.5rem;
+    align-items: center;
+    color: var(--color-pharagraph);
+    span {
+      color: var(--colorText);
+      font-weight: var(--font-weight-spanAbout);
+    }
+  }
+}
