@@ -8,6 +8,9 @@
     list-style: none;
     border-radius: 0.3rem;
 
+    //margine dreapte la contact
+    // margin-right: -0.35rem;
+
     .nav {
       a {
         color: var(--colorText);
@@ -84,6 +87,7 @@
   @include media(">=425px", "<=552px") {
     ul {
       background-color: var(--cart-bg);
+
       .nav {
         padding: 0rem;
 
@@ -103,7 +107,9 @@
   }
 
   @include media(">552px", "<1023px") {
-    background-color: var(--cart-bg);
+    ul {
+      background-color: var(--cart-bg);
+    }
   }
 
   //DESKTOP

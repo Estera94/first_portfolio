@@ -185,7 +185,7 @@ input[type=checkbox] {
   }
   .label .fa-moon {
     width: 19px;
-    margin-bottom: 21.5px;
+    margin-bottom: 19px;
   }
   .label .ball {
     top: 30px;
@@ -823,7 +823,7 @@ body .container {
   }
 }
 @media (min-width: 553px) and (max-width: 1022px) {
-  .top-menu {
+  .top-menu ul {
     background-color: var(--cart-bg);
   }
 }
