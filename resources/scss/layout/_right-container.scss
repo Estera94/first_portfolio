@@ -123,11 +123,10 @@
       }
     }
 
-    //////////////////////////////////
+    //bar top and bottom right container
     .bottom::after {
       content: "";
-      // background-color: var(--cart-bg);
-      background-color: blue;
+      background-color: var(--cart-bg);
       position: fixed;
       z-index: 2;
       width: 725px;
@@ -136,13 +135,22 @@
     }
     .bottom::before {
       content: "";
-      // background-color: var(--cart-bg);
-      background: red;
+      background-color: var(--cart-bg);
       position: fixed;
       z-index: 2;
       width: 725px;
       height: 3.8%;
       margin-top: 36.5rem;
+    }
+  }
+
+  .check-media {
+    display: none;
+    width: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .check-media {
+      width: 768px;
     }
   }
 }

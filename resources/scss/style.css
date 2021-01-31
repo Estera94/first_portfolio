@@ -185,7 +185,7 @@ input[type=checkbox] {
   }
   .label .fa-moon {
     width: 19px;
-    margin-top: -6px;
+    margin-top: -8px;
   }
   .label .ball {
     top: 30px;
@@ -370,7 +370,7 @@ body .container {
   }
   .right-container .bottom::after {
     content: "";
-    background-color: blue;
+    background-color: var(--cart-bg);
     position: fixed;
     z-index: 2;
     width: 725px;
@@ -379,12 +379,21 @@ body .container {
   }
   .right-container .bottom::before {
     content: "";
-    background: red;
+    background-color: var(--cart-bg);
     position: fixed;
     z-index: 2;
     width: 725px;
     height: 3.8%;
     margin-top: 36.5rem;
+  }
+}
+.right-container .check-media {
+  display: none;
+  width: 0;
+}
+@media screen and (max-width: 768px) {
+  .right-container .check-media {
+    width: 768px;
   }
 }
 
