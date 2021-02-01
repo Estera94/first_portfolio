@@ -10,17 +10,12 @@
     margin-top: 2rem;
 
     #work1 {
-      width: 19rem;
-      height: 24rem;
-      margin-bottom: 4rem;
       img {
         @include worksImg;
       }
     }
 
     #work2 {
-      width: 19rem;
-      height: 13rem;
       img {
         @include worksImg;
       }
@@ -45,24 +40,43 @@
 
       #work1 {
         width: 80%;
-        height: 80%;
       }
       #work2 {
         width: 80%;
-        height: 80%;
       }
     }
   }
 
-  @include media(">=1022px") {
-    .title-work::after {
-      content: "";
-      margin: 303px 0px 0 -89px;
-      position: absolute;
-      width: 70%;
-      height: 1.5px;
-      transform: rotate(90deg);
-      background: var(--line-cart);
+  @include media(">488px", "<1023px") {
+    @include workContent;
+  }
+
+  @include media(">1023px", "<desktop") {
+    @include titleWorksImg(252px 0px 0px -100px, 70%);
+
+    @include workContent;
+  }
+
+  @include media(">=desktop") {
+    @include titleWorksImg(307px 0px 0px -75px, 70%);
+
+    .work-content {
+      #work1 {
+        width: 19rem;
+        height: 24rem;
+        margin-bottom: 4rem;
+        img {
+          @include worksImg;
+        }
+      }
+
+      #work2 {
+        width: 19rem;
+        height: 13rem;
+        img {
+          @include worksImg;
+        }
+      }
     }
 
     figure.work-overlay {

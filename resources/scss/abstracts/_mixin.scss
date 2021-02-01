@@ -97,3 +97,31 @@
     }
   }
 }
+
+//Projects page
+
+@mixin titleWorksImg($margin, $width) {
+  .title-work::after {
+    content: "";
+    margin: $margin;
+    position: absolute;
+    width: $width;
+    height: 1.5px;
+    transform: rotate(90deg);
+    background: var(--line-cart);
+  }
+}
+
+@mixin workContent {
+  .work-content {
+    display: flex;
+    justify-content: space-around;
+
+    #work1 {
+      width: 40%;
+    }
+    #work2 {
+      width: 40%;
+    }
+  }
+}
