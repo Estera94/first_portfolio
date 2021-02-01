@@ -1167,15 +1167,6 @@ body .container {
   background-color: var(--cart-bg);
   display: none;
 }
-.projects .title-work::after {
-  content: "";
-  margin: 303px 0px 0 -89px;
-  position: absolute;
-  width: 70%;
-  height: 1.5px;
-  transform: rotate(90deg);
-  background: var(--line-cart);
-}
 .projects .work-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1205,39 +1196,68 @@ body .container {
   padding: 0.8rem;
   font-weight: var(--font-weightPharagraph);
 }
-.projects figure.work-overlay {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background: var(--bg);
-  cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+.projects i {
+  display: none;
 }
-.projects .work-overlay * {
-  box-sizing: border-box;
-  transition: all 0.7s ease;
+@media (max-width: 488px) {
+  .projects .work-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects .work-content #work1 {
+    width: 80%;
+    height: 80%;
+  }
+  .projects .work-content #work2 {
+    width: 80%;
+    height: 80%;
+  }
 }
-.projects .work-overlay * i {
-  font-size: 20px;
-  font-weight: medium;
-}
-.projects .work-overlay * a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 1rem;
-}
-.projects .work-overlay * .worksLink {
-  position: absolute;
-  bottom: 50%;
-  opacity: 0;
-}
-.projects .work-overlay:hover img {
-  opacity: 0.6;
-  transform: scale(1.1);
-}
-.projects figure.work-overlay:hover figcaption .worksLink {
-  opacity: 1;
+@media (min-width: 1022px) {
+  .projects .title-work::after {
+    content: "";
+    margin: 303px 0px 0 -89px;
+    position: absolute;
+    width: 70%;
+    height: 1.5px;
+    transform: rotate(90deg);
+    background: var(--line-cart);
+  }
+  .projects figure.work-overlay {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: var(--bg);
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  .projects .work-overlay * {
+    box-sizing: border-box;
+    transition: all 0.7s ease;
+  }
+  .projects .work-overlay * i {
+    font-size: 20px;
+    font-weight: medium;
+  }
+  .projects .work-overlay * a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+  }
+  .projects .work-overlay * .worksLink {
+    position: absolute;
+    bottom: 50%;
+    opacity: 0;
+  }
+  .projects .work-overlay:hover img {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+  .projects figure.work-overlay:hover figcaption .worksLink {
+    opacity: 1;
+  }
 }
 
 .contact1 {
