@@ -49,36 +49,12 @@
     }
   }
 
-  //MEDIA 209px
-  @include media("<=299px") {
-    @include top-menu(-1.3rem);
-  }
+  // MEDIA under 425px
 
-  //MEDIA 209px
-  @include media(">299px", "<338px") {
-    @include top-menu(-1rem);
-  }
-
-  //MEDIA 340px
-  @include media(">=338px", "<381px") {
-    @include top-menu(-0.6rem);
-  }
-
-  //MEDIA 381px to 402px
-  @include media(">=381px", "<=404px") {
-    @include top-menu(-0.3rem);
-  }
-
-  //MEDIA 402px to 412px
-
-  @include media(">404px", "<=412px") {
-    @include top-menu(-0.2rem);
-  }
-
-  // MEDIA 411px to 425px
-
-  @include media(">412px", "<=425px") {
-    @include top-menu(0px);
+  @include media("<=425px") {
+    @include top-menu;
+    @include menuUnderline;
+    margin-top: 0;
   }
 
   // SMALL SCREEN 400px to 552px
@@ -88,7 +64,7 @@
       background-color: var(--cart-bg);
 
       .nav {
-        padding: 0rem;
+        padding: 0;
 
         a {
           font-size: 1rem;

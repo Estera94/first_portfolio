@@ -26,18 +26,18 @@
 
 //top menu page
 
-@mixin top-menu($marginTopRight) {
+@mixin top-menu {
   display: flex;
   background-color: var(--cart-bg);
   height: 52px;
-  border-radius: 5px 5px;
   position: fixed;
+  margin-left: 0;
 
   ul {
     border: none;
     display: flex;
     width: 84.5vw;
-    margin-left: $marginTopRight;
+    margin-right: 10.5px;
 
     li {
       width: 100%;
@@ -54,6 +54,13 @@
         }
       }
     }
+  }
+}
+
+@mixin menuUnderline {
+  .underline::after {
+    content: "";
+    display: none;
   }
 }
 
