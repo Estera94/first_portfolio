@@ -260,9 +260,6 @@ body .container {
   }
 }
 
-.right-container {
-  z-index: -9;
-}
 .right-container .titles {
   font-size: 23px;
   color: var(--colorText);
@@ -281,7 +278,7 @@ body .container {
   margin-top: 5px;
   width: 30px;
   height: 30px;
-  background: linear-gradient(to left, rgba(255, 0, 0, 0), var(--green-color));
+  background: linear-gradient(to left, rgba(251, 252, 251, 0), var(--green-color));
   border-radius: 50%;
   z-index: 1;
   opacity: 0.4;
@@ -292,15 +289,6 @@ body .container {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: var(--line-cart);
-}
-.right-container .title-line::after {
-  content: "";
-  margin: 312px 0px 0px -25px;
-  position: absolute;
-  width: 70%;
-  height: 1.5px;
-  transform: rotate(90deg);
   background: var(--line-cart);
 }
 @media (min-width: 1023px) and (max-width: 1365px) {
@@ -335,6 +323,15 @@ body .container {
     content: "";
     margin: 50px 0px 0px -100px;
   }
+  .right-container .title-line::after {
+    content: "";
+    margin: 250px 0px 0px -50px;
+    position: absolute;
+    width: 70%;
+    height: 1.5px;
+    transform: rotate(90deg);
+    background: var(--line-cart);
+  }
 }
 @media (min-width: 1366px) {
   .right-container {
@@ -368,6 +365,15 @@ body .container {
     content: "";
     margin: 50px 0px 0px -100px;
   }
+  .right-container .title-line::after {
+    content: "";
+    margin: 308px 0px 0px -25px;
+    position: absolute;
+    width: 70%;
+    height: 1.5px;
+    transform: rotate(90deg);
+    background: var(--line-cart);
+  }
   .right-container .bottom::after {
     content: "";
     background-color: var(--cart-bg);
@@ -385,15 +391,6 @@ body .container {
     width: 725px;
     height: 3.8%;
     margin-top: 36.5rem;
-  }
-}
-.right-container .check-media {
-  display: none;
-  width: 0;
-}
-@media screen and (max-width: 768px) {
-  .right-container .check-media {
-    width: 768px;
   }
 }
 
@@ -666,7 +663,7 @@ body .container {
     width: 100%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1365px) {
+@media (min-width: 1023px) and (max-width: 1366px) {
   .left-container {
     max-width: 25.25rem;
     height: 38rem;
@@ -707,7 +704,7 @@ body .container {
     margin-top: 20px;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 1367px) {
   .left-container {
     width: 31.25rem;
     height: 40.5rem;
@@ -815,6 +812,7 @@ body .container {
     background-color: var(--cart-bg);
     height: 52px;
     border-radius: 5px 5px;
+    position: fixed;
   }
   .top-menu ul {
     border: none;
@@ -842,6 +840,7 @@ body .container {
     background-color: var(--cart-bg);
     height: 52px;
     border-radius: 5px 5px;
+    position: fixed;
   }
   .top-menu ul {
     border: none;
@@ -869,6 +868,7 @@ body .container {
     background-color: var(--cart-bg);
     height: 52px;
     border-radius: 5px 5px;
+    position: fixed;
   }
   .top-menu ul {
     border: none;
@@ -896,6 +896,7 @@ body .container {
     background-color: var(--cart-bg);
     height: 52px;
     border-radius: 5px 5px;
+    position: fixed;
   }
   .top-menu ul {
     border: none;
@@ -923,6 +924,7 @@ body .container {
     background-color: var(--cart-bg);
     height: 52px;
     border-radius: 5px 5px;
+    position: fixed;
   }
   .top-menu ul {
     border: none;
@@ -950,6 +952,7 @@ body .container {
     background-color: var(--cart-bg);
     height: 52px;
     border-radius: 5px 5px;
+    position: fixed;
   }
   .top-menu ul {
     border: none;
@@ -1060,7 +1063,7 @@ body .container {
   bottom: -10px;
   width: 45px;
   height: 45px;
-  background: linear-gradient(to left, rgba(255, 0, 0, 0), var(--green-color));
+  background: linear-gradient(to left, rgba(252, 253, 252, 0), var(--green-color));
   border-radius: 50%;
   z-index: 1;
   opacity: 0.2;
@@ -1281,6 +1284,19 @@ body .container {
   color: var(--color-pharagraph);
   font-size: 15.6px;
 }
+@media (max-width: 1022px) {
+  .resume .resume-detailes {
+    display: block;
+  }
+  .resume .resume-detailes .resume-experience,
+.resume .resume-detailes .resume-education {
+    max-width: 100%;
+  }
+  .resume .resume-detailes .resume-experience .resume-title .name,
+.resume .resume-detailes .resume-education .resume-title .name {
+    font-size: 20px;
+  }
+}
 
 .projects {
   background-color: var(--cart-bg);
@@ -1370,7 +1386,38 @@ body .container {
   width: 100%;
   height: 220px;
 }
-@media (min-width: 696px) and (max-width: 726px) {
+@media (max-width: 373px) {
+  .contact1 .info-map {
+    font-size: 13px;
+  }
+  .contact1 .info-map ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 30px;
+    line-height: 2;
+    color: var(--color-pharagraph);
+  }
+  .contact1 .info-map ul span {
+    color: var(--colorText);
+    font-weight: var(--font-weight-spanAbout);
+  }
+}
+@media (min-width: 374px) and (max-width: 695px) {
+  .contact1 .info-map ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 30px;
+    line-height: 2;
+    color: var(--color-pharagraph);
+  }
+  .contact1 .info-map ul span {
+    color: var(--colorText);
+    font-weight: var(--font-weight-spanAbout);
+  }
+}
+@media (min-width: 695px) and (max-width: 725px) {
   .contact1 .info-map {
     margin: 15px 0px 0px 30px;
     font-size: 15px;
@@ -1391,7 +1438,42 @@ body .container {
     font-size: 14px;
   }
 }
-@media (min-width: 726px) {
+@media (min-width: 726px) and (max-width: 1022px) {
+  .contact1 .info-map {
+    margin: 15px 30px 0px 30px;
+    font-size: 16px;
+  }
+  .contact1 .info-map ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 2.5rem;
+    align-items: center;
+    color: var(--color-pharagraph);
+  }
+  .contact1 .info-map ul span {
+    color: var(--colorText);
+    font-weight: var(--font-weight-spanAbout);
+  }
+  .contact1 .info-map span {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1365px) {
+  .contact1 ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 30px;
+    line-height: 2;
+    color: var(--color-pharagraph);
+  }
+  .contact1 ul span {
+    color: var(--colorText);
+    font-weight: var(--font-weight-spanAbout);
+  }
+}
+@media (min-width: 1366px) {
   .contact1 .info-map {
     margin: 15px 30px 0px 30px;
   }

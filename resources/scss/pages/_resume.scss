@@ -97,4 +97,23 @@
       }
     }
   }
+
+  //Media 1021px
+
+  @include media("<=1022px") {
+    .resume-detailes {
+      display: block;
+
+      .resume-experience,
+      .resume-education {
+        max-width: 100%;
+
+        .resume-title {
+          .name {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
 }

@@ -11,9 +11,26 @@
     }
   }
 
-  //MEDIA small screen
+  //Media small under 374px
 
-  @include media(">=696px", "<727px") {
+  @include media("<374px") {
+    .info-map {
+      @include contactFlex;
+      font-size: 13px;
+    }
+  }
+
+  //Media  small screens 374px
+
+  @include media(">=374px", "<696px") {
+    .info-map {
+      @include contactFlex;
+    }
+  }
+
+  //MEDIA  tablets
+
+  @include media(">=695px", "<726px") {
     .info-map {
       @include contact;
       margin: 15px 0px 0px 30px;
@@ -24,9 +41,28 @@
     }
   }
 
-  //MEDIA from 727px
+  // //MEDIA from 727px
 
-  @include media(">=726px") {
+  @include media(">=726px", "<=1022px") {
+    .info-map {
+      @include contact;
+      margin: 15px 30px 0px 30px;
+      font-size: 16px;
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+
+  //MEDIA from 1062px
+
+  @include media(">1022px", "<desktop") {
+    @include contactFlex;
+  }
+
+  //MEDIA from 1366px
+
+  @include media(">=desktop") {
     .info-map {
       @include contact;
       margin: 15px 30px 0px 30px;

@@ -308,7 +308,7 @@
 
   //LARGE TABLET
 
-  @include media(">=1023px", "<desktop") {
+  @include media(">=1023px", "<=desktop") {
     max-width: 25.25rem;
     height: 38rem;
     border-radius: 0.3rem;
@@ -359,7 +359,7 @@
 
   //DESKTOP
 
-  @include media(">=desktop") {
+  @include media(">desktop") {
     width: 31.25rem;
     height: 40.5rem;
     border-radius: 0.3rem;
