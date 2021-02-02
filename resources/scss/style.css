@@ -512,6 +512,7 @@ body .container {
 @media (min-width: 374px) and (max-width: 425px) {
   .left-container {
     min-height: 680px;
+    max-height: 680px;
   }
   .left-container .my-image {
     width: 160px;
@@ -527,6 +528,7 @@ body .container {
 @media (min-width: 425px) and (max-width: 525px) {
   .left-container {
     min-height: 625px;
+    max-height: 625px;
   }
   .left-container .my-image {
     width: 160px;
@@ -547,6 +549,7 @@ body .container {
 @media (min-width: 526px) and (max-width: 565px) {
   .left-container {
     min-height: 625px;
+    max-height: 625px;
   }
   .left-container .my-image {
     width: 160px;
@@ -567,6 +570,7 @@ body .container {
 @media (min-width: 566px) and (max-width: 805px) {
   .left-container {
     min-height: 625px;
+    max-height: 625px;
   }
   .left-container .my-image {
     width: 200px;
@@ -595,6 +599,7 @@ body .container {
 @media (min-width: 806px) and (max-width: 1005px) {
   .left-container {
     min-height: 625px;
+    max-height: 625px;
   }
   .left-container .my-image {
     width: 210px;
@@ -626,6 +631,7 @@ body .container {
 @media (min-width: 1006px) and (max-width: 1022px) {
   .left-container {
     min-height: 625px;
+    max-height: 625px;
   }
   .left-container .my-image {
     width: 210px;
