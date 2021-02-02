@@ -881,6 +881,7 @@ body .container {
   background-color: var(--cart-bg);
   color: var(--color-pharagraph);
   font-weight: var(--font-weightPharagraph);
+  padding-bottom: 25px;
 }
 .about .row {
   display: flex;
@@ -948,8 +949,6 @@ body .container {
 }
 @media (min-width: 801px) and (max-width: 1366px) {
   .about .row {
-    display: flex;
-    flex-direction: column;
     margin: 8px 40px 0 30px;
   }
   .about .row .text-about {
@@ -987,10 +986,7 @@ body .container {
     align-items: center;
   }
   .about .row .info-list ul span {
-    color: var(--colorText);
     font-size: 14px;
-    text-transform: uppercase;
-    font-weight: var(--font-weight-spanAbout);
   }
   .about .fact-items {
     display: grid;
@@ -998,17 +994,12 @@ body .container {
     justify-content: center;
   }
   .about .fact-items .fact-item {
-    margin: 30px 0px 0px 20px;
-    display: flex;
-    flex-direction: column;
     max-width: 70%;
     line-height: 1.8em;
   }
   .about .fact-items .fact-item .fa-icon {
     font-size: 1.7rem;
-    color: var(--green-color);
     margin-left: 14px;
-    position: relative;
   }
   .about .fact-items .fact-item .fa-icon::after {
     content: "";
@@ -1017,16 +1008,9 @@ body .container {
     bottom: -15px;
     width: 60px;
     height: 60px;
-    background: linear-gradient(to left, rgba(255, 0, 0, 0), var(--green-color));
-    border-radius: 50%;
-    z-index: 1;
-    opacity: 0.2;
   }
   .about .fact-items .fact-item .fact-name {
     margin-top: 10px;
-    color: var(--colorText);
-    font-weight: var(--font-weight-factRight);
-    margin-top: 25px;
   }
   .about .fact-items .fact-item .grey-text {
     margin-bottom: 20px;
@@ -1301,6 +1285,7 @@ body .container {
 
 .contact1 {
   background-color: var(--cart-bg);
+  padding-bottom: 25px;
   display: none;
 }
 .contact1 .map {
