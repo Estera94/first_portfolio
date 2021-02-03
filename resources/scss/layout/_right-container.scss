@@ -50,12 +50,10 @@
 
     &::before {
       content: "";
-      background-color: transparent;
-      position: absolute;
+      position: fixed;
       z-index: 5;
-      width: 5%;
-      height: 100%;
-      margin-left: -40px;
+      height: 560px;
+      margin-left: -8px;
       box-shadow: 12px 0px 12px 2px var(--box-shadow);
     }
 
@@ -89,12 +87,10 @@
 
     &::before {
       content: "";
-      background-color: transparent;
-      position: absolute;
+      position: fixed;
       z-index: 5;
-      width: 5%;
-      height: 100%;
-      margin-left: -40px;
+      height: 610px;
+      margin-left: -8px;
       box-shadow: 12px 0px 12px 2px var(--box-shadow);
     }
 

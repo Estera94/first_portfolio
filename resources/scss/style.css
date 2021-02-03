@@ -189,6 +189,7 @@ input[type=checkbox] {
   }
   .label .ball {
     top: 30px;
+    font-size: 0.65rem;
   }
 }
 @media (min-width: 425px) and (max-width: 552px) {
@@ -302,12 +303,10 @@ body .container {
   }
   .right-container::before {
     content: "";
-    background-color: transparent;
-    position: absolute;
+    position: fixed;
     z-index: 5;
-    width: 5%;
-    height: 100%;
-    margin-left: -40px;
+    height: 560px;
+    margin-left: -8px;
     box-shadow: 12px 0px 12px 2px var(--box-shadow);
   }
   .right-container .titles {
@@ -344,12 +343,10 @@ body .container {
   }
   .right-container::before {
     content: "";
-    background-color: transparent;
-    position: absolute;
+    position: fixed;
     z-index: 5;
-    width: 5%;
-    height: 100%;
-    margin-left: -40px;
+    height: 610px;
+    margin-left: -8px;
     box-shadow: 12px 0px 12px 2px var(--box-shadow);
   }
   .right-container .titles {
@@ -814,6 +811,7 @@ body .container {
     height: 52px;
     position: fixed;
     margin-left: 0;
+    box-shadow: 8px 0px 12px 2px rgba(196, 193, 193, 0.3);
     margin-top: 0;
   }
   .top-menu ul {
@@ -833,7 +831,7 @@ body .container {
     margin-top: -0.8rem;
   }
   .top-menu ul .nav a .link {
-    font-size: 0.6rem;
+    font-size: 0.65rem;
   }
   .top-menu .underline::after {
     content: "";
@@ -851,7 +849,7 @@ body .container {
     font-size: 1rem;
   }
   .top-menu ul .nav a .link {
-    font-size: 0.5rem;
+    font-size: 0.65rem;
   }
   .top-menu ul .nav a .link4 {
     padding-bottom: 25px;
