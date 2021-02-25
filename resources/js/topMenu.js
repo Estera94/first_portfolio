@@ -8,3 +8,7 @@ topMenu.forEach((buttons) => {
     buttons.classList.add("menuHover");
   });
 });
+
+function show() {
+  document.querySelector(".top-menu").classList.toggle("active");
+}

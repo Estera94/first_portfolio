@@ -4,7 +4,6 @@
   z-index: 5;
 
   ul {
-    border: 1.5px solid grey;
     list-style: none;
     border-radius: 0.3rem;
 
@@ -30,12 +29,6 @@
         .fas {
           margin-bottom: 0.4rem;
         }
-
-        &:hover {
-          color: var(--green-color);
-          transition-timing-function: ease-in;
-          font-weight: var(--font-weight-icon);
-        }
       }
       .underline::after {
         content: "";
@@ -49,6 +42,10 @@
     }
   }
 
+  .menuHover {
+    color: var(--green-color) !important;
+  }
+
   // MEDIA under 425px
 
   @include media("<=425px") {
@@ -57,38 +54,37 @@
     margin-top: 0;
   }
 
-  // SMALL SCREEN 400px to 552px
+  //MEDIA 425px to 1024px
 
-  @include media(">=425px", "<=552px") {
-    ul {
-      background-color: var(--cart-bg);
+  @include media(">=425px", "<1024px") {
+    position: fixed;
+    right: -90px;
+    transition: 0.4s;
+    box-shadow: -2px 5px 12px 3px var(--box-shadow);
 
-      .nav {
-        padding: 0;
+    .toggle-btn {
+      position: absolute;
+      top: 5px;
+      right: 95px;
+      cursor: pointer;
 
-        a {
-          font-size: 1rem;
-
-          .link {
-            font-size: 0.65rem;
-          }
-
-          .link4 {
-            padding-bottom: 25px;
-          }
-        }
+      span {
+        width: 30px;
+        height: 4px;
+        background-color: rgb(158, 152, 152);
+        display: block;
+        margin-top: 7px;
       }
     }
-  }
 
-  @include media(">552px", "<1023px") {
     ul {
       background-color: var(--cart-bg);
+      border-radius: 0.3rem;
     }
   }
 
   //DESKTOP
-  @include media(">=1023px") {
+  @include media(">=1024px") {
     position: relative;
     height: 40.25rem;
     padding: 0.4em;
@@ -96,11 +92,18 @@
 
     ul {
       background-color: var(--cart-bg);
-      border: none;
-    }
 
-    .menuHover {
-      color: var(--green-color) !important;
+      nav {
+        &:hover {
+          color: var(--green-color);
+          transition-timing-function: ease-in;
+          font-weight: var(--font-weight-icon);
+        }
+      }
     }
   }
+}
+
+.active {
+  right: 0;
 }

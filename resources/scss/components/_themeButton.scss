@@ -44,22 +44,6 @@ input[type="checkbox"] {
       font-size: 0.65rem;
     }
   }
-
-  //MEDIA 400px to 552px
-
-  @include media(">=425px", "<=552px") {
-    width: 55px;
-    font-size: 0.7rem;
-
-    .fa-moon {
-      width: 17px;
-      margin-bottom: 10px;
-    }
-
-    .ball {
-      top: 35px;
-    }
-  }
 }
 
 .mode-button {

@@ -57,26 +57,16 @@
       box-shadow: 12px 0px 12px 2px var(--box-shadow);
     }
 
-    .titles {
-      padding: 17px;
-
-      .first-word::before {
-        content: "";
-        position: absolute;
-        left: 20px;
-        margin-top: 5px;
-      }
-
-      &::before {
-        content: "";
-        margin: 50px 0px 0px -100px;
-      }
-    }
-
     @include middleLine(250px 0px 0px -50px);
+
+    @include titles;
+
+    //bar top and bottom right container
+    @include topAndBottom(565px, 533px);
   }
 
   //DESKTOP
+
   @include media(">=desktop") {
     width: 46rem;
     height: 38.3rem;
@@ -94,43 +84,11 @@
       box-shadow: 12px 0px 12px 2px var(--box-shadow);
     }
 
-    .titles {
-      padding: 17px;
-
-      .first-word::before {
-        content: "";
-        position: absolute;
-        left: 20px;
-        margin-top: 5px;
-      }
-
-      &::before {
-        content: "";
-        margin: 50px 0px 0px -100px;
-      }
-    }
-
     @include middleLine(308px 0px 0px -25px);
 
+    @include titles;
+
     //bar top and bottom right container
-    .bottom::after {
-      content: "";
-      background-color: var(--cart-bg);
-      position: fixed;
-      z-index: 2;
-      width: 725px;
-      height: 3.8%;
-      margin-top: -1px;
-      transform: rotate(180deg);
-    }
-    .bottom::before {
-      content: "";
-      background-color: var(--cart-bg);
-      position: fixed;
-      z-index: 2;
-      width: 725px;
-      height: 3.8%;
-      margin-top: 36.5rem;
-    }
+    @include topAndBottom(725px, 584px);
   }
 }
