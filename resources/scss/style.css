@@ -767,7 +767,6 @@ body .container {
 }
 
 .top-menu {
-  margin: 5px;
   position: absolute;
   z-index: 5;
 }
@@ -843,6 +842,7 @@ body .container {
 }
 @media (min-width: 425px) and (max-width: 1023px) {
   .top-menu {
+    margin: 5px 0 5px 5px;
     position: fixed;
     right: -90px;
     transition: 0.4s;
@@ -852,7 +852,6 @@ body .container {
     position: absolute;
     top: 5px;
     right: 95px;
-    cursor: pointer;
   }
   .top-menu .toggle-btn span {
     width: 30px;
@@ -868,6 +867,7 @@ body .container {
 }
 @media (min-width: 1024px) {
   .top-menu {
+    margin: 5px;
     position: relative;
     height: 40.25rem;
     padding: 0.4em;
